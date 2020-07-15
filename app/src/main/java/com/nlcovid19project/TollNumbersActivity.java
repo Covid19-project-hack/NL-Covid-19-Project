@@ -1,17 +1,11 @@
 package com.nlcovid19project;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ProgressDialog;
-import android.app.SearchManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -20,10 +14,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.nlcovid19project.Adapter.TestLabsAdapter;
-import com.nlcovid19project.Adapter.TollNumbersAdapter;
-import com.nlcovid19project.Models.Test_Labs;
-import com.nlcovid19project.Models.Toll_Numbers;
 
 import org.json.JSONArray;
 import org.json.JSONException;
