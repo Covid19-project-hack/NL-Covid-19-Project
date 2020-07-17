@@ -14,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.nlcovid19project.MedicalStoresActivity;
 import com.nlcovid19project.OrphanageSupport.FreeFoodActivity;
-import com.nlcovid19project.TollNumbersActivity;
 import com.bumptech.glide.Glide;
 
 import com.nlcovid19project.CoronaActivity;
@@ -90,8 +89,8 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ImageViewHolde
                                 break;
 
                             case 2:
-                                Intent tollnumbersintent = new Intent(mContext, TollNumbersActivity.class);
-                                tollnumbersintent.putExtra("url", jsons.getToll_numbers());
+                                Intent tollnumbersintent = new Intent(Intent.ACTION_VIEW);
+                                tollnumbersintent.setData(Uri.parse(jsons.getToll_numbers()));
                                 mContext.startActivity(tollnumbersintent);
                                 break;
 
@@ -102,7 +101,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ImageViewHolde
 
                             case 4:
                                 Intent healthcareintent = new Intent(Intent.ACTION_VIEW);
-                                healthcareintent.setData(Uri.parse(jsons.getDonate()));
+                                healthcareintent.setData(Uri.parse(jsons.getHealth_care()));
                                 mContext.startActivity(healthcareintent);
                                 break;
 
@@ -134,6 +133,11 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ImageViewHolde
                                 mContext.startActivity(testlabsintent);
                                 break;
 
+                            case 11:
+                                Intent trackerintent = new Intent(Intent.ACTION_VIEW);
+                                trackerintent.setData(Uri.parse(jsons.getTracker()));
+                                mContext.startActivity(trackerintent);
+                                break;
                             case 12:
                                 Intent orphanagesupportintent = new Intent(mContext, OrphanageSupportActivity.class);
                                 mContext.startActivity(orphanagesupportintent);

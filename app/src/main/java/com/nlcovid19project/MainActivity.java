@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             "Volunteers & Donors",
             "Food Supply",
             "Labs for Test",
-            "CM's Hunger Relief Center",
+            "Appliication Tracker",
             "Support Orphans & Vulnerable",
             "E-Pass",
             "Donate Funds",
@@ -227,12 +227,12 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             JSONObject jsonObject = response.getJSONObject("NL").getJSONObject("total");
                             String confirmed = jsonObject.getString("confirmed");
-                            String deceased = jsonObject.getString("deceased");
+//                            String deceased = jsonObject.getString("deceased");
                             String tested = jsonObject.getString("tested");
                             String recovered = jsonObject.getString("recovered");
 
                             Confirmed.setText(confirmed);
-                            Deceased.setText(deceased);
+//                            Deceased.setText(deceased);
                             Tested.setText(tested);
                             Recovered.setText(recovered);
 

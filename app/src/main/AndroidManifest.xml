@@ -32,7 +32,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".CMHungerReliefCenterActivity" />
+
         <activity
             android:name=".OnlineEducationActivity"
             android:label="Online Education"
@@ -131,11 +131,6 @@
         <activity
             android:name=".CoronaActivity"
             android:label="TN Corona Status"
-            android:screenOrientation="unspecified" />
-        <activity android:name=".HealthCareActivity" />
-        <activity
-            android:name=".TollNumbersActivity"
-            android:label="Toll Numbers"
             android:screenOrientation="unspecified" />
         <activity
             android:name=".Services.WebViewActivity"
